@@ -17,6 +17,10 @@ ul {
   width: 20%;
 }
 
+.active {
+  color: yellow;
+}
+
 main {
   display: flex;
   flex-direction: column;

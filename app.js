@@ -16,7 +16,9 @@ console.log(adminData.products)
 app.use(shopRoutes);
 
 app.use((req, res, next) => {
-  res.status(404).render('404-err')
+  res.status(404).render('404-err', {
+    pageTitle: 'Page Not Found'
+  })
 })
 
 app.listen(3000)
