@@ -1,0 +1,34 @@
+article {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 30%;
+  height: fit-content;
+  border: 1px solid grey;
+  padding: 1em;
+  -webkit-box-shadow: 8px 10px 5px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 8px 10px 5px 0px rgba(0,0,0,0.75);
+  box-shadow: 8px 10px 5px 0px rgba(0,0,0,0.75);
+}
+
+.card_content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 5em;
+}
+
+.product-image {
+  width: 100%;
+}
+
+.card_image {
+  width: fit-content;
+}
+
+.btn {
+  border-radius: 1em;
+  padding: .5em;
+}

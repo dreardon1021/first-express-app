@@ -22,5 +22,12 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
   margin-top: 3em;
+  width: 100%;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-around;
 }
