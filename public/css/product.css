@@ -6,7 +6,6 @@ article {
   width: 30%;
   height: fit-content;
   border: 1px solid grey;
-  padding: 1em;
   margin-top: 1em;
   -webkit-box-shadow: 8px 10px 5px 0px rgba(0,0,0,0.75);
   -moz-box-shadow: 8px 10px 5px 0px rgba(0,0,0,0.75);
@@ -19,6 +18,19 @@ article {
   justify-content: space-between;
   flex-direction: column;
   height: 5em;
+}
+
+.product-header {
+  background-color: lightblue;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 3em;
+}
+
+.product_title {
+  margin: 0;
 }
 
 .card_image {
@@ -48,6 +60,7 @@ article {
   margin-top: 1em;
   width: 100%;
   justify-content: space-around;
+  margin-bottom: 1em;
 }
 
 .admin-button-delete-form {
