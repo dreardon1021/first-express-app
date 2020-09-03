@@ -12,7 +12,9 @@
           <img class="product-image" src="<%= product.imageUrl %>" alt="<%= product.title %>">
           <h2 class="product_price">$<%= product.price %></h2>
           <p class="product_description"><%= product.description %></p>
-          <button class="btn">Add to Cart</button>
+          <form class="admin-button-delete-form" action="/add-to-cart" method="POST">
+            <button class="btn">Add to Cart</button>
+          </form>
       </article>
       <% } %>
     </div>
