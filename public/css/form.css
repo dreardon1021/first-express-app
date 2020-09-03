@@ -6,9 +6,9 @@ form {
   flex-direction: column;
 }
 
-input {
+input,
+textarea {
   width: 70%;
-  height: 2em;
   padding: .2em;
 }
 
