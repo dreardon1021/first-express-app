@@ -2,4 +2,27 @@
 </head>
 <body>
   <%- include('../includes/navigation.ejs') %>
-  <%- include('../includes/end.ejs') %>
+  <main class="flex-col">
+    <% if (prods.length > 0) { %>
+    <h1>My Products</h1>
+    <div class="flex">
+      <% for (let product of prods) { %>
+      <article class="card product-item">
+          <h1 class="product_title"><%= product.title %></h1>
+          <img class="product-image" src="<%= product.imageUrl %>" alt="<%= product.title %>">
+          <h2 class="product_price">$<%= product.price %></h2>
+          <p class="product_description"><%= product.description %></p>
+          <div class="button-control">
+            <a class="admin-product-button" href="/admin/edit-product" class="btn"><button class="btn">Edit</button></a>
+            <form class="admin-button-delete-form" action="/admin/delete-product" method="POST">
+              <button class="btn">Delete</>
+            </form>
+          </div>
+      </article>
+      <% } %>
+    </div>
+    <% } else { %>
+      <h1>No Products Found</h1>
+    <% } %>
+  </main>
+<%- include('../includes/end.ejs') %>

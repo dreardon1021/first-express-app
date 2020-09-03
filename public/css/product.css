@@ -7,6 +7,7 @@ article {
   height: fit-content;
   border: 1px solid grey;
   padding: 1em;
+  margin-top: 1em;
   -webkit-box-shadow: 8px 10px 5px 0px rgba(0,0,0,0.75);
   -moz-box-shadow: 8px 10px 5px 0px rgba(0,0,0,0.75);
   box-shadow: 8px 10px 5px 0px rgba(0,0,0,0.75);
@@ -20,15 +21,37 @@ article {
   height: 5em;
 }
 
-.product-image {
+.card_image {
   width: 100%;
+  height: 5em;
 }
 
-.card_image {
-  width: fit-content;
+.product-image {
+  height: 20em;
+  width: 100%;
 }
 
 .btn {
   border-radius: 1em;
+  width: 10em;
+  height: 3.5em;
+  background-color: lightblue;
   padding: .5em;
+}
+
+.btn:hover {
+  background-color: yellow;
+}
+
+.button-control {
+  display: flex;
+  margin-top: 1em;
+  width: 100%;
+  justify-content: space-around;
+}
+
+.admin-button-delete-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
