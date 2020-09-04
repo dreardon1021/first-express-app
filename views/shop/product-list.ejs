@@ -8,13 +8,18 @@
     <div class="flex">
       <% for (let product of prods) { %>
       <article class="card product-item">
-          <h1 class="product_title"><%= product.title %></h1>
+          <div class="product-header">
+            <h1 class="product_title"><%= product.title %></h1>
+          </div>
           <img class="product-image" src="<%= product.imageUrl %>" alt="<%= product.title %>">
           <h2 class="product_price">$<%= product.price %></h2>
           <p class="product_description"><%= product.description %></p>
-          <form class="admin-button-delete-form" action="/add-to-cart" method="POST">
-            <button class="btn">Add to Cart</button>
-          </form>
+          <div class="button-control">
+            <a href="/products/<%= product.id %>"><button class="btn">Details</button></a>
+            <form class="admin-button-delete-form" action="/add-to-cart" method="POST">
+              <button class="btn">Add to Cart</button>
+            </form>
+          </div>
       </article>
       <% } %>
     </div>
